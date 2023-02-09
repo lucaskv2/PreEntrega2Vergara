@@ -2,48 +2,10 @@ body{
     background-color: rgb(255, 243, 243);
 }
 
-/*BARRA DE NAVEGACION*/
-.menu-principal{
-    width: 100%;
-    display: flex;
-    background-color: rgb(230, 230, 230);
-    justify-content: space-between;
-    align-items: center;
-    height: 75px;
-    padding: 0 30px;
-    z-index: 1;
-
-}
-
 .logo{
     width: 130px;
     cursor: pointer;
 }
-
-.menu-bar{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.menu-bar .enlaces ul li{
-    display: inline-block;
-    padding: 0 10px;
-}
-
-.menu-bar .enlaces ul li a{
-    font-size: 14px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: rgb(42, 42, 42);
-    font-weight: 600;
-}
-
-.menu-bar .enlaces ul li a:hover{
-    padding: 16px;
-    background-color: rgb(201, 201, 201);
-}
-
 
 h1{
     color: rgb(114, 152, 7);
@@ -61,7 +23,7 @@ h2{
 }
 
 .texto{
-    color: rgb(103, 75, 138);
+    color: rgb(0, 0, 0);
     font-size: 20px;
     line-height: 1.3;
     margin: 10px 0 30px 0;
@@ -113,3 +75,4 @@ footer{
 .redes-sociales span:hover{
     color: blue;
 }
+

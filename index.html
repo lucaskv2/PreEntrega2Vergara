@@ -1,163 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cómo jugar al ajedrez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <header></header>
-            <div class="menu-principal">
-                <div class="logo">
-                    <img src="img/icon.webp" alt="ICONO">
-                </div>
-                <div class="menu-bar">       
-                    <nav class="enlaces">
-                        <ul class="barra-navegacion">
-                            <li class="nav-bar"><a href="index.html">Inicio</a></li>
-                            <li class="nav-bar"><a href="#movimientos">Movimientos</a></li>
-                            <li class="nav-bar"><a href="#jaque">Jaque</a></li>
-                            <li class="nav-bar"><a href="#enroque">Enroque</a></li>
-                            <li class="nav-bar"><a href="#coronar">Coronar</a></li>
-                            <li class="nav-bar"><a href="#capturar">"Al paso"</a></li>
-                            <li class="nav-bar"><a href="#ubicacion">Ubicación de piezas</a></li>
-                            <li class="nav-bar"><a href="#normas">Normas</a></li>
-                            <li class="nav-bar"><a href="#tablas">Tablas</a></li>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <img src="img/icon.webp" alt="ICONO">
+                    </div>
+                  <a class="navbar-brand" href="#">Inicio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#movimientos">Movimientos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#jaque">Jaque</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Enroque">Enroque</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#coronar">Coronar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#capturar">"Al paso"</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#ubicacion">Ubicación</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#normas">Normas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#tablas">Tablas</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                    </nav>
+                      </li>
+                  </div>
                 </div>
-            </div> 
+            </nav>
         </header>
         <img src="img/enfrentamiento.png" alt="Tablero de ajedrez">
         <main>
-            
+
             <section>
                 <h2><a name="movimientos"></a> Aprender como se mueven las piezas</h2>
                 <div class="texto">
                     <ul>
-                        <li>El peón: la pieza más básica del juego (hay 8). En su movimiento inicial, puede moverse una o dos casillas vacías hacia adelante, aunque después únicamente puede moverse una casilla vacía hacia adelante. Los peones no pueden moverse hacia adelante si los bloquea una pieza contraria, y tampoco pueden capturar piezas que estén directamente delante de ellos. Pueden capturar piezas que se encuentren una casilla adelante de ellos en diagonal. </li>
-                        <li>La torre: Puede moverse de manera horizontal o vertical por la cantidad de casillas que esté disponible y capturar a las piezas contrarias en su camino.</li>
-                        <li>El caballo: Se mueve formando una L que puede ser dos casillas en dirección horizontal y luego una casilla en dirección vertical, o una casilla en dirección horizontal y dos casillas en dirección vertical. El caballo es la única pieza que puede saltar sobre otras. Sin embargo, únicamente captura una pieza contraria si esta se encuentra en el espacio en donde cae.</li>
-                        <li>El alfil: si bien solo puede moverse en diagonal, puede hacerlo por una cantidad ilimitada de casillas en esa dirección y capturar las piezas contrarias en su camino. Debido a que únicamente puede moverse en diagonal, uno de los alfiles permanece sobre las casillas blancas, en tanto que el otro permanece en las casillas negras.</li>
-                        <li>La reina: es la pieza más poderosa y, por lo general, se la puede identificar por su corona femenina. Puede moverse de manera horizontal, vertical o diagonal por cualquier cantidad de casillas y capturar piezas en cualquier dirección.</li>
-                        <li>El rey: únicamente puede moverse un espacio en cada turno en cualquier dirección y captura piezas del mismo modo. Es la unidad que no debes perder a toda costa. </li>
+                        <li>El peón: la pieza más básica del juego (hay 8). En su movimiento inicial, puede moverse una
+                            o dos casillas vacías hacia adelante, aunque después únicamente puede moverse una casilla
+                            vacía hacia adelante. Los peones no pueden moverse hacia adelante si los bloquea una pieza
+                            contraria, y tampoco pueden capturar piezas que estén directamente delante de ellos. Pueden
+                            capturar piezas que se encuentren una casilla adelante de ellos en diagonal. </li>
+                        <li>La torre: Puede moverse de manera horizontal o vertical por la cantidad de casillas que esté
+                            disponible y capturar a las piezas contrarias en su camino.</li>
+                        <li>El caballo: Se mueve formando una L que puede ser dos casillas en dirección horizontal y
+                            luego una casilla en dirección vertical, o una casilla en dirección horizontal y dos
+                            casillas en dirección vertical. El caballo es la única pieza que puede saltar sobre otras.
+                            Sin embargo, únicamente captura una pieza contraria si esta se encuentra en el espacio en
+                            donde cae.</li>
+                        <li>El alfil: si bien solo puede moverse en diagonal, puede hacerlo por una cantidad ilimitada
+                            de casillas en esa dirección y capturar las piezas contrarias en su camino. Debido a que
+                            únicamente puede moverse en diagonal, uno de los alfiles permanece sobre las casillas
+                            blancas, en tanto que el otro permanece en las casillas negras.</li>
+                        <li>La reina: es la pieza más poderosa y, por lo general, se la puede identificar por su corona
+                            femenina. Puede moverse de manera horizontal, vertical o diagonal por cualquier cantidad de
+                            casillas y capturar piezas en cualquier dirección.</li>
+                        <li>El rey: únicamente puede moverse un espacio en cada turno en cualquier dirección y captura
+                            piezas del mismo modo. Es la unidad que no debes perder a toda costa. </li>
                     </ul>
                 </div>
                 <img src="img/ajedrez-piezas-e1638821794377.jpg" alt="Piezas de ajedrez">
             </section>
 
-            <br><hr>
+            <br>
+            <hr>
             <section>
                 <h2><a name="jaque"></a>¿Qué significa estar en "jaque"?</h2>
                 <div class="texto">
-                    <h4>Si tu rey está en jaque, está siendo atacado por una de las piezas de tu oponente. Cuando el rey está en jaque, debes sacarlo de allí en tu siguiente turno. Es posible salirte del jaque con uno de tres métodos:</h4>
+                    <h4>Si tu rey está en jaque, está siendo atacado por una de las piezas de tu oponente. Cuando el rey
+                        está en jaque, debes sacarlo de allí en tu siguiente turno. Es posible salirte del jaque con uno
+                        de tres métodos:</h4>
                     <ul>
-                        <li>Mover el rey a una casilla segura. Una casilla segura es una en donde el rey no vaya a estar en jaque. </li>
+                        <li>Mover el rey a una casilla segura. Una casilla segura es una en donde el rey no vaya a estar
+                            en jaque. </li>
                         <li>Capturar la pieza que esté haciendo el jaque. </li>
                         <li>Bloquear el jaque con una de tus piezas</li>
                     </ul>
-                    <h4>Si no es posible sacar al rey del jaque en tu siguiente turno, esto se conoce como jaque mate. La partida habrá terminado y habrás perdido. </h4>
+                    <h4>Si no es posible sacar al rey del jaque en tu siguiente turno, esto se conoce como jaque mate.
+                        La partida habrá terminado y habrás perdido. </h4>
                 </div>
                 <img src="img/jaque.png" alt="jaque">
             </section>
-            <br><hr>
+            <br>
+            <hr>
             <section>
                 <h2>¿Cómo se gana?</h2>
                 <div class="texto">
-                    <h4>En el ajedrez, intentas hacerle jaque mate al rey de tu oponente. El jaque mate ocurre cuando el rey está atrapado y no tiene cuadros seguras a los que pueda ir. Sin embargo, también se puede ganar por renuncia o porque se acabó el tiempo.</h4>
+                    <h4>En el ajedrez, intentas hacerle jaque mate al rey de tu oponente. El jaque mate ocurre cuando el
+                        rey está atrapado y no tiene cuadros seguras a los que pueda ir. Sin embargo, también se puede
+                        ganar por renuncia o porque se acabó el tiempo.</h4>
                     <ul>
                         <li>El jaque mate es un jaque pero sin una forma de remediarlo.</li>
-                        <li>Cuando un jugador renuncia, quiere decir que se rinde y asi se da por finalizada la partida.</li>
-                        <li>Perder porque se acabó el tiempo ocurre cuando un jugador se queda sin tiempo en el reloj. Los jugadores casuales no suelen jugar con un reloj pero, de ser así, puedes perder si se te acaba el tiempo.</li>
+                        <li>Cuando un jugador renuncia, quiere decir que se rinde y asi se da por finalizada la partida.
+                        </li>
+                        <li>Perder porque se acabó el tiempo ocurre cuando un jugador se queda sin tiempo en el reloj.
+                            Los jugadores casuales no suelen jugar con un reloj pero, de ser así, puedes perder si se te
+                            acaba el tiempo.</li>
                     </ul>
                 </div>
                 <img src="img/jaquemate.webp" alt="Cómo hacer jaque mate">
             </section>
-            <br><hr>
+            <br>
+            <hr>
             <section>
                 <h2><a name="enroque"></a>Enroque</h2>
                 <div class="texto">
-                    <h4>Este es el único momento en el que puedes mover dos piezas en el mismo turno y el único momento en el que puedes mover el rey dos casillas. Este le brinda protección al rey (por parte de los peones) y movilidad a la torre. En general, es útil enrocar al rey.</h4>
+                    <h4>Este es el único momento en el que puedes mover dos piezas en el mismo turno y el único momento
+                        en el que puedes mover el rey dos casillas. Este le brinda protección al rey (por parte de los
+                        peones) y movilidad a la torre. En general, es útil enrocar al rey.</h4>
                     <ul>
                         <li>Puedes usar el enroque únicamente en las siguientes circunstancias:
                             <ul>
                                 <li>Ni el rey ni la torre que se vayan a enrocar se han movido.</li>
                                 <li>El rey no está en jaque.</li>
                                 <li>No hay piezas entre el rey y la torre.</li>
-                                <li>El rey no pasa por encima de una casilla que esté controlada por una pieza contraria ni cae en ella.</li>
+                                <li>El rey no pasa por encima de una casilla que esté controlada por una pieza contraria
+                                    ni cae en ella.</li>
                             </ul>
-                        </li>   
-                        <li>En un turno, se mueven el rey y la torre. Mueve primero el rey dos casillas hacia la torre y luego coloca la torre en la casilla adyacente al rey, del otro lado. Si enrocas por el lado del rey, la torre se mueve dos casillas en total. Si enrocas por el lado de la reina, la torre se mueve tres casillas en total. El rey se mueve dos casillas en cualquier dirección.</li>
+                        </li>
+                        <li>En un turno, se mueven el rey y la torre. Mueve primero el rey dos casillas hacia la torre y
+                            luego coloca la torre en la casilla adyacente al rey, del otro lado. Si enrocas por el lado
+                            del rey, la torre se mueve dos casillas en total. Si enrocas por el lado de la reina, la
+                            torre se mueve tres casillas en total. El rey se mueve dos casillas en cualquier dirección.
+                        </li>
                     </ul>
                 </div>
                 <img src="img/enroques_corto_y_largo.png_26252103.webp" alt="Tipos de enroque">
             </section>
-            <br><hr>
+            <br>
+            <hr>
             <section>
                 <h2><a name="coronar"></a>Coronar los peones</h2>
                 <div class="texto">
-                    <h4>La "coronación" ocurre cuando el peón alcanza la última fila (la octava para los blancos y la primera para los negros). Cuando esto ocurre, el peón se corona de inmediato y se convierte en cualquier otra pieza del mismo color, salvo el rey y el peón.</h4>
+                    <h4>La "coronación" ocurre cuando el peón alcanza la última fila (la octava para los blancos y la
+                        primera para los negros). Cuando esto ocurre, el peón se corona de inmediato y se convierte en
+                        cualquier otra pieza del mismo color, salvo el rey y el peón.</h4>
                 </div>
                 <img src="img/coronar.jpeg" alt="Coronar peones">
             </section>
-            <br><hr>
+            <br>
+            <hr>
             <section>
                 <h2><a name="capturar"></a>Capturar "al paso"</h2>
                 <div class="texto">
-                <ul>
-                    <li>Si recuerdas, puedes mover el peón 2 casillas hacia adelante en su primer movimiento. Imagina que lo haces y caes junto al peón de tu oponente en la misma fila. En el siguiente movimiento , tu oponente puede capturar a tu peón al paso. Por lo general, las piezas únicamente pueden capturar moviéndose hacia la casilla que la pieza contraria haya estado ocupando, pero este es un caso excepcional en el que el peón contrario se coloca en la casilla que el peón haya pasado por encima y de todos modos lo captura. </li>
-                    <li>El peón que tú o tu oponente estén a punto de capturar debe haberse movido dos casillas hacia adelante. Si el peón se movió únicamente una casilla, el movimiento será inválido.</li>
-                    <li>Nuevamente, esto puede ocurrir solo justo después de que un peón haya realizado su movimiento inicial de 2 casillas. Si pasa un turno, se pierde la oportunidad.</li>
-                </ul>
+                    <ul>
+                        <li>Si recuerdas, puedes mover el peón 2 casillas hacia adelante en su primer movimiento.
+                            Imagina que lo haces y caes junto al peón de tu oponente en la misma fila. En el siguiente
+                            movimiento , tu oponente puede capturar a tu peón al paso. Por lo general, las piezas
+                            únicamente pueden capturar moviéndose hacia la casilla que la pieza contraria haya estado
+                            ocupando, pero este es un caso excepcional en el que el peón contrario se coloca en la
+                            casilla que el peón haya pasado por encima y de todos modos lo captura. </li>
+                        <li>El peón que tú o tu oponente estén a punto de capturar debe haberse movido dos casillas
+                            hacia adelante. Si el peón se movió únicamente una casilla, el movimiento será inválido.
+                        </li>
+                        <li>Nuevamente, esto puede ocurrir solo justo después de que un peón haya realizado su
+                            movimiento inicial de 2 casillas. Si pasa un turno, se pierde la oportunidad.</li>
+                    </ul>
                 </div>
                 <img src="img/capturar-al-paso.png" alt="Capturar al paso">
             </section>
-            <br><hr>
+            <br>
+            <hr>
             <section>
                 <h2><a name="ubicacion"></a>Lugar de las piezas</h2>
                 <div class="texto">
                     <h4>Las piezas blancas deben estar en las filas 1 y 2 y las negras en las filas 7 y 8.</h4>
                     <ul>
-                        <li>Coloca todos los peones en la segunda (para los blancos) o séptima (para los negros) fila de forma que haya una pared de peones entre tú y tu oponente.</li>
+                        <li>Coloca todos los peones en la segunda (para los blancos) o séptima (para los negros) fila de
+                            forma que haya una pared de peones entre tú y tu oponente.</li>
                         <li>Coloca cada torre en una esquina de tu lado del tablero.</li>
                         <li>Coloca un caballo junto a cada torre y un alfil junto a cada caballo.</li>
-                        <li>Coloca a la reina en uno de los dos espacios restantes según su color (es decir, si tu reina es negra, debe colocarse sobre la casilla negra. Si es blanca, debe colocarse sobre la casilla blanca).</li>
-                        <li>Finalmente, coloca el rey en la última casilla restante. Fíjate que tu oponente haya dispuesto sus piezas del mismo modo. Las reinas deben estar en extremos opuestos, al igual que los reyes.</li>
-                    </ul>   
-                </div>
-            </sect  ion>
-            <br><hr>
-            <section>
-                <h2><a name="normas"></a>Normas básicas y consejos</h2>
-                <div class="texto">
-                    <ul>
-                        <li><h4>Haz que las piezas blancas se muevan primero. En el ajedrez, las piezas blancas juegan primero, seguidas de las negras.</h4></li>
-                        <li><h4>En el ajedrez, debes hacer un movimiento cuando sea tu turno. No puedes "pasar" en tu turno. Si no tienes ningún movimiento legal, se ha producido una situación de ahogado y la partida se declara tablas.</h4></li>
-                        <li><h4>Aprende la notación algebraica. Cada casilla del tablero corresponde con una letra y un número. Desde la perspectiva del color blanco, las letras de las columnas van en orden alfabético de izquierda a derecha y las filas empiezan por el 1.</h4></li>
+                        <li>Coloca a la reina en uno de los dos espacios restantes según su color (es decir, si tu reina
+                            es negra, debe colocarse sobre la casilla negra. Si es blanca, debe colocarse sobre la
+                            casilla blanca).</li>
+                        <li>Finalmente, coloca el rey en la última casilla restante. Fíjate que tu oponente haya
+                            dispuesto sus piezas del mismo modo. Las reinas deben estar en extremos opuestos, al igual
+                            que los reyes.</li>
                     </ul>
                 </div>
-                <img src="img/primer paso.jfif" alt="Empiezan las blancas">
-            </section>
-            <br><hr>
-            <section>
-                <h2><a name="tablas"></a>Formas de quedar en tablas:</h2>
-                <div class="texto">
-                    <ul>
-                       <li>Por rey ahogado: esto ocurre cuando el jugador cuyo turno sea no se encuentra en jaque pero no le quedan movimientos legales con el rey ni con cualquier otra pieza y la partida termina en tablas. Esto suele ocurrir en los niveles más bajos cuando un jugador no está seguro sobre cómo hacer jaque mate.</li>
-                        <li>Por acuerdo: los jugadores pueden acordar que la partida quede en tablas. Esto suele ocurrir en la etapa final de la partida cuando ambos jugadores han decidido que no hay una forma de ganar.</li>
-                        <li>Por triple repetición: si se da exactamente la misma posición del tablero en tres momentos distintos de la partida, esta se declara tablas.</li>
-                        <li>Por la regla de los 50 movimientos: si ninguno de los jugadores mueve un peón o captura una pieza por 50 movimientos consecutivos, se puede hacer una reclamación de que la partida quede en tablas.</li>
-                        <li>Por insuficiencia de material: si ninguno de los jugadores tiene material suficiente para hacerle jaque mate al rey, la partida se considera tablas.</li>
-                        <li>Por falta de tiempo e insuficiencia de material: si a un jugador se le acaba el tiempo pero el otro jugador no tiene material suficiente para hacerle jaque mate al jugador contrario, la partida se declara tablas.</li>
-                    </ul>
-                </div>
-                <img src="img/rey_ahogado.png" alt="Rey ahogado">
-            </section>
-            <br><hr>
+                </sect ion>
+                <br>
+                <hr>
+                <section>
+                    <h2><a name="normas"></a>Normas básicas y consejos</h2>
+                    <div class="texto">
+                        <ul>
+                            <li>
+                                <h4>Haz que las piezas blancas se muevan primero. En el ajedrez, las piezas blancas
+                                    juegan primero, seguidas de las negras.</h4>
+                            </li>
+                            <li>
+                                <h4>En el ajedrez, debes hacer un movimiento cuando sea tu turno. No puedes "pasar" en
+                                    tu turno. Si no tienes ningún movimiento legal, se ha producido una situación de
+                                    ahogado y la partida se declara tablas.</h4>
+                            </li>
+                            <li>
+                                <h4>Aprende la notación algebraica. Cada casilla del tablero corresponde con una letra y
+                                    un número. Desde la perspectiva del color blanco, las letras de las columnas van en
+                                    orden alfabético de izquierda a derecha y las filas empiezan por el 1.</h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="img/primer paso.jfif" alt="Empiezan las blancas">
+                </section>
+                <br>
+                <hr>
+                <section>
+                    <h2><a name="tablas"></a>Formas de quedar en tablas:</h2>
+                    <div class="texto">
+                        <ul>
+                            <li>Por rey ahogado: esto ocurre cuando el jugador cuyo turno sea no se encuentra en jaque
+                                pero no le quedan movimientos legales con el rey ni con cualquier otra pieza y la
+                                partida termina en tablas. Esto suele ocurrir en los niveles más bajos cuando un jugador
+                                no está seguro sobre cómo hacer jaque mate.</li>
+                            <li>Por acuerdo: los jugadores pueden acordar que la partida quede en tablas. Esto suele
+                                ocurrir en la etapa final de la partida cuando ambos jugadores han decidido que no hay
+                                una forma de ganar.</li>
+                            <li>Por triple repetición: si se da exactamente la misma posición del tablero en tres
+                                momentos distintos de la partida, esta se declara tablas.</li>
+                            <li>Por la regla de los 50 movimientos: si ninguno de los jugadores mueve un peón o captura
+                                una pieza por 50 movimientos consecutivos, se puede hacer una reclamación de que la
+                                partida quede en tablas.</li>
+                            <li>Por insuficiencia de material: si ninguno de los jugadores tiene material suficiente
+                                para hacerle jaque mate al rey, la partida se considera tablas.</li>
+                            <li>Por falta de tiempo e insuficiencia de material: si a un jugador se le acaba el tiempo
+                                pero el otro jugador no tiene material suficiente para hacerle jaque mate al jugador
+                                contrario, la partida se declara tablas.</li>
+                        </ul>
+                    </div>
+                    <img src="img/rey_ahogado.png" alt="Rey ahogado">
+                </section>
+                <br>
+                <hr>
         </main>
         <footer>
             <div class="redes-sociales">
@@ -174,6 +283,10 @@
                 <span>@ajedrezWeblog</span>
             </div>
         </footer>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
