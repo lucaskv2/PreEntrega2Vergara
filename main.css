@@ -34,6 +34,12 @@ h2{
     font-family: 'Arimo', sans-serif;
     font-size: 30px;
     margin: 15px 0 15px 40px;
+    text-decoration-line: underline;
+    transition: all 1s;
+}
+
+h2:hover{
+    color: rgb(1, 204, 204);
 }
 
 .texto{
@@ -51,6 +57,10 @@ img{
     display: block;
     margin: auto;
     border: solid 3px rgb(78, 78, 78);
+}
+
+img:hover{
+    cursor: pointer;
 }
 
 li{
@@ -88,7 +98,7 @@ footer{
     text-align: center;
 }
 .captura{
-    justify-content: center;
+    margin-top: 90px;
 }
 
 .redes-sociales{
@@ -96,6 +106,10 @@ footer{
     font-weight: 500;
     font-size: 3vh;
     margin: 10px 0px 10px 0px;
+}
+
+.redes-sociales:hover{
+    cursor: pointer;
 }
 
 
@@ -129,4 +143,8 @@ footer{
         border-bottom: #ffffff 1px solid;
         margin: 0;
     }    
+
+    .captura{
+        margin-top: 0;
+    }
 }
