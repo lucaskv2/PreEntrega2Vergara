@@ -1,0 +1,21 @@
+/*NAV*/
+
+header{
+    background-color: $header-color;
+}
+
+
+.li-hover{
+    text-align: center;
+    transition: all 2s;
+    &:hover{
+        background-color: $li-hover;
+    }
+}
+
+.logo{
+    height: 4vh;
+    width: 4vh;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+/*img ESTILOS*/
+img{
+    width: 45vh;
+    height: 40vh;
+    display: block;
+    margin: auto;
+    border: solid 3px $img-color-border;
+    &:hover{
+        cursor: pointer;
+    }
+}

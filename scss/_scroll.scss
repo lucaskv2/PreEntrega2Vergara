@@ -1,0 +1,19 @@
+/*SCROLL*/
+
+.simplescrollup__button {
+    background-color: $scroll-color;
+    width: 4vh;
+    height: 4vh;
+    text-align: center;
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    transition: 1s all;
+    z-index: 10000;
+}
+.simplescrollup__button--show {
+    transform: translateX(0);
+}
+.simplescrollup__button--hide {
+    transform: translateX(10px);
+}

@@ -1,0 +1,25 @@
+/*FOOTER*/
+
+footer{
+    background-color: $black;
+    display: flex;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+.captura{
+    margin-top: 90px;
+}
+
+.redes-sociales{
+    color: $white;
+    font-weight: 500;
+    font-size: 3vh;
+    margin: 10px 0px 10px 0px;
+    &:hover{
+        cursor: pointer;
+    }
+}
