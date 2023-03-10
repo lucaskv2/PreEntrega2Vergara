@@ -1,8 +1,11 @@
-@import "variables";
+@import "reset";
+@import "variables-color";
+@import "variables-fonts";
+@import "media-queries";
 @import "back-color";
 @import "nav";
 @import "texto";
 @import "img";
 @import "scroll";
+@import "form";
 @import "footer";
-@import "media-queries";
