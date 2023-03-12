@@ -69,6 +69,7 @@ li {
     border-bottom: #ffffff 1px solid;
     margin: 0; }
   .captura {
+    padding: 0;
     margin-top: 0; } }
 
 /*img ESTILOS*/
@@ -80,6 +81,9 @@ img {
   border: solid 3px #4e4e4e; }
   img:hover {
     cursor: pointer; }
+
+.captura {
+  margin-top: 90px; }
 
 .row {
   width: 100%; }
@@ -110,9 +114,6 @@ footer {
 .container {
   width: 100%;
   text-align: center; }
-
-.captura {
-  margin-top: 90px; }
 
 .redes-sociales {
   color: #ffffff;
@@ -167,3 +168,8 @@ footer {
 .card {
   margin: 2rem auto;
   width: 20rem; }
+
+@media (max-width: 700px) {
+  .captura {
+    padding: 0;
+    margin: 10px 0; } }
