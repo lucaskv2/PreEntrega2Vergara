@@ -25,7 +25,7 @@
         margin-bottom: 20px;
     }
     .inputs{
-        @include formU($white, $white, 18px, 10px, 100%);
+        @include formU($white, $black, 18px, 10px, 100%);
         border-radius: 4px;
         margin-bottom: 16px;
         border: 1px solid $ref-color;

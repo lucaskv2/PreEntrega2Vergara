@@ -81,6 +81,9 @@ img {
   img:hover {
     cursor: pointer; }
 
+.row {
+  width: 100%; }
+
 /*SCROLL*/
 .simplescrollup__button {
   background-color: #00011c;
@@ -144,7 +147,7 @@ footer {
     margin-bottom: 20px; }
   .form-register .inputs {
     background: #ffffff;
-    color: #ffffff;
+    color: #000000;
     font-size: 18px;
     padding: 10px;
     width: 100%;
