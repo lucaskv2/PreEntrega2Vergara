@@ -1,8 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*Header y Background color*/
+/*Texto color*/
+/*Scroll color*/
+/*Form color*/
+/*IMG color*/
+/*a color*/
+/*body color*/
 body {
   background-color: #fff3f3; }
 
+/*NAV*/
 header {
-  background-color: #f8fbff; }
+  background-color: #fff3f3; }
 
 .li-hover {
   text-align: center;
@@ -11,14 +24,15 @@ header {
     background-color: #d2d6da; }
 
 .logo {
+  margin: 0 10px 0 0;
   height: 4vh;
   width: 4vh;
-  margin: 0 10px 0 0;
   cursor: pointer; }
 
+/*estilo H2 - TEXTO - LI*/
 h2 {
   color: #17002b;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
   font-size: 30px;
   margin: 15px 0 15px 40px;
   text-decoration-line: underline;
@@ -35,15 +49,39 @@ h2 {
 li {
   margin: 10px; }
 
+/*MEDIA QUERIES*/
+@media (max-width: 700px) {
+  .texto {
+    font-size: 14px;
+    line-height: 1.1; }
+  h2 {
+    font-size: 24px; }
+  h4 {
+    font-size: 16px; }
+  img {
+    width: 35vh;
+    height: 30vh;
+    display: block; }
+  .redes-sociales {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 2vh;
+    border-bottom: #ffffff 1px solid;
+    margin: 0; }
+  .captura {
+    margin-top: 0; } }
+
+/*img ESTILOS*/
 img {
-  width: 45vh;
-  height: 40vh;
-  display: block;
   margin: auto;
+  height: 40vh;
+  width: 45vh;
+  display: block;
   border: solid 3px #4e4e4e; }
   img:hover {
     cursor: pointer; }
 
+/*SCROLL*/
 .simplescrollup__button {
   background-color: #00011c;
   width: 4vh;
@@ -61,6 +99,7 @@ img {
 .simplescrollup__button--hide {
   transform: translateX(10px); }
 
+/*FOOTER*/
 footer {
   background-color: #000000;
   display: flex; }
@@ -80,23 +119,48 @@ footer {
   .redes-sociales:hover {
     cursor: pointer; }
 
-@media (max-width: 700px) {
-  .texto {
-    font-size: 15px;
-    line-height: 1.1; }
-  h2 {
-    font-size: 24px; }
-  h4 {
-    font-size: 16px; }
-  img {
-    width: 35vh;
-    height: 30vh;
-    display: block; }
-  .redes-sociales {
+.form-register {
+  background: #000000;
+  color: #ffffff;
+  font-size: 0;
+  padding: 30px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 6vh;
+  border-radius: 4px;
+  font-family: "Arimo", sans-serif;
+  box-shadow: 7px 13px 37px #000; }
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px; }
+  .form-register a {
+    color: #009cff;
+    text-decoration: none; }
+    .form-register a:hover {
+      text-decoration: underline; }
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px; }
+  .form-register .inputs {
+    background: #ffffff;
     color: #ffffff;
-    font-weight: 500;
-    font-size: 2vh;
-    border-bottom: #ffffff 1px solid;
-    margin: 0; }
-  .captura {
-    margin-top: 0; } }
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #009cff;
+    font-family: "Arimo", sans-serif; }
+  .form-register .botons {
+    background: #009cff;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    margin: 16px 0; }
+
+.card {
+  margin: 2rem auto;
+  width: 20rem; }

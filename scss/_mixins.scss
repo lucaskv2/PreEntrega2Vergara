@@ -1,0 +1,13 @@
+@mixin  formU($background, $color, $font-size, $padding, $widht){
+    background: $background;
+    color: $color;
+    font-size: $font-size;
+    padding: $padding;
+    width: $widht;
+}
+
+@mixin mhw($margin, $height, $widht){
+    margin: $margin;
+    height: $height;
+    width: $widht;
+}

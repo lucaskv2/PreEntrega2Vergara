@@ -1,9 +1,7 @@
 /*img ESTILOS*/
 img{
-    width: 45vh;
-    height: 40vh;
+    @include mhw(auto, 40vh, 45vh);
     display: block;
-    margin: auto;
     border: solid 3px $img-color-border;
     &:hover{
         cursor: pointer;

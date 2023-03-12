@@ -1,11 +1,13 @@
 @import "reset";
 @import "variables-color";
 @import "variables-fonts";
-@import "media-queries";
-@import "back-color";
+@import "mixins";
+@import "back";
 @import "nav";
 @import "texto";
+@import "media-queries";
 @import "img";
 @import "scroll";
 @import "footer";
 @import "form";
+@import "cards";

@@ -1,7 +1,6 @@
 /*NAV*/
-
 header{
-    background-color: $header-color;
+    background-color: $back-color;
 }
 
 
@@ -14,8 +13,6 @@ header{
 }
 
 .logo{
-    height: 4vh;
-    width: 4vh;
-    margin: 0 10px 0 0;
+    @include mhw(0 10px 0 0, 4vh, 4vh);
     cursor: pointer;
 }

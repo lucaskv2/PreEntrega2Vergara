@@ -1,12 +1,10 @@
 .form-register{
-    width: 400px;
-    background: black;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
+    @include formU($black, $white, 0, 30px, 80%);
+    margin: 0 auto;
+    margin-top: 6vh;
     border-radius: 4px;
     font-family: $texto-font;
-    color: $white;
+    box-shadow: 7px 13px 37px #000;
 
     p{
         height: 40px;
@@ -15,10 +13,9 @@
     }
 
     a{
-        color: $white;
+        color: $ref-color;
         text-decoration: none;
         &:hover{
-            color: $white;
             text-decoration: underline;
         }
     }
@@ -28,23 +25,16 @@
         margin-bottom: 20px;
     }
     .inputs{
-        width: 100%;
-        background: $form-color;
-        padding: 10px;
+        @include formU($white, $white, 18px, 10px, 100%);
         border-radius: 4px;
         margin-bottom: 16px;
-        border: 1px solid $white;
+        border: 1px solid $ref-color;
         font-family: $texto-font;
-        font-size: 18px;
     }
 
     .botons{
-        width: 100%;
-        background: $white;
+        @include formU($ref-color, $white, 16px, 12px, 100%);
         border: none;
-        padding: 12px;
-        color: $white;
         margin: 16px 0;
-        font-size: 16px;
     }
 }
